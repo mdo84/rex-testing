@@ -15,12 +15,8 @@ port "7022";
 set group => "server" => "localhost";
 
 task "uptime", group => "server", sub {
-
-say run "uptime";
-print $?;
-
-die("peng");
-
+  say run "uptime";
+  print $?;
 };
 
 1;
